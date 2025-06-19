@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinanZen - Gestiona tu dinero con inteligencia</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+    body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+      background-color: #ffffff;
+      color: #26292E;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #E9EAEA;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: #0D1028;
+      font-weight: 700;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      color: #555869;
+    }
+
+    .hero.snapshot {
+      padding: 4rem 2rem 2rem;
+      background-color: #E8F2F7;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .hero-text h1 {
+      color: #26292E;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text p {
+      font-size: 1.35rem;
+      max-width: 600px;
+      color: #26292E;
+    }
+
+    .hero-text ul {
+      margin-top: 1rem;
+      padding-left: 1.5rem;
+    }
+
+    .hero-text ul li {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: #26292E;
+    }
+
+    .hero-image img {
+      max-width: 420px;
+      border-radius: 10px;
+    }
+
+    .prioridades-box {
+      background-color: #fefefe;
+      padding: 2rem;
+      margin-top: 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 12px;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      gap: 1.5rem;
+    }
+
+    .prioridades-box img {
+      width: 60px;
+      height: 60px;
+    }
+
+    .prioridades-box .prioridades-text {
+      flex: 1;
+    }
+
+    .btn-prioridades {
+  background-color: #126B49;
+  color: white;
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+    .btn-prioridades:hover {
+  background-color: #183c37;
+}
+
+    .cita {
+      text-align: center;
+      color: #126B49;
+      font-weight: 500;
+      margin: 2.5rem 0 1rem;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+    }
+
+    .info-box {
+      background-color: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-align: left;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      position: relative;
+    }
+
+    .badge {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background-color: #126B49;
+      color: white;
+      font-size: 0.75rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: 5px;
+      font-weight: 600;
+    }
+
+    .info-box img {
+      width: 50px;
+      margin-bottom: 1rem;
+    }
+
+    .info-box h4 {
+      color: #26292E;
+      margin-bottom: 0.5rem;
+    }
+
+    .info-box p {
+      font-size: 1.2rem;
+      color: #26292E;
+    }
+
+    .ver-todo {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #ffffff;
+  border: 2px solid #2d775a;
+  color: #1e5d4f;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.75rem 1.25rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+    .ver-todo:hover {
+  background-color: #d03032;
+  color: white;
+  text-decoration: none;
+}
+
+    .footer {
+      background-color: #E9EAEA;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 1.15rem;
+      color: #7D7F82;
+    }
+    .fade-in {
+    opacity: 0;
+    animation: fadeIn ease 1.2s forwards;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  .hover-grow {
+    transition: transform 0.3s ease;
+  }
+
+  .hover-grow:hover {
+    transform: scale(1.04);
+  }
+</style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="Imagenes/logo-finansmart.png" alt="Logo Finanzen" style="height: 80px;">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#funcionalidades">Funcionalidades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero snapshot">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hover-grow">FinanZen: Tecnología inteligente para tu salud financiera</h1>
+        <p>Nuestra plataforma combina IoT e inteligencia artificial para ayudarte a controlar tus gastos, cumplir metas de ahorro y aprender sobre finanzas con recomendaciones personalizadas.</p>
+        <ul>
+          <li>📊 Monitorea tus ingresos y egresos automáticamente</li>
+          <li>🎯 Crea metas financieras y recíbelas en recordatorios inteligentes</li>
+          <li>🧠 Aprende con sugerencias generadas por IA adaptadas a ti</li>
+        </ul>
+      </div>
+      <div class="hero-image">
+        <img src="Imagenes/hero-image.png" alt="Uso de app Finanzen en dispositivos" class="fade-in">
+      </div>
+    </div>
+
+    <div class="prioridades-box fade-in hover-grow">
+      <img src="Imagenes/icon-prioridades.png" alt="Icono prioridades" style="width: 60px; height: 60px;">
+      <div class="prioridades-text">
+        <h3>¿Qué tipo de usuario eres?</h3>
+        <p>Explora nuestros recursos diseñados para jóvenes sin educación financiera o emprendedores que desean controlar mejor sus ingresos y egresos.</p>
+      </div>
+      <a href="cuestionario.html" class="btn-prioridades" style="text-decoration: none;">Comenzar</a>
+    </div>
+
+    <div class="cita">
+      <p><strong>Más del 50% de los jóvenes universitarios en Perú tienen un nivel bajo o medio de educación financiera (Mendoza, 2022).</strong></p>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-box fade-in hover-grow">
+        <span class="badge">Guía</span>
+        <img src="Imagenes/ahorro.png" alt="Ahorro">
+        <h4>Metas y hábitos de ahorro</h4>
+        <p>Define objetivos personalizados y recibe alertas automáticas para construir un hábito financiero saludable.</p>
+        <a href="#" class="ver-todo">Descubre más</a>
+      </div>
+      <div class="info-box">
+        <span class="badge">Recurso</span>
+        <img src="Imagenes/registro.png" alt="Registro IoT">
+        <h4>Registro automático IoT</h4>
+        <p>Conecta dispositivos como relojes o apps bancarias para registrar ingresos y gastos sin esfuerzo.</p>
+      </div>
+      <div class="info-box">
+        <span class="badge">Módulo</span>
+        <img src="Imagenes/plan-financiero.png" alt="Plan Financiero Inteligente">
+        <h4>Planes financieros con IA</h4>
+        <p>Simula escenarios, analiza tus patrones de consumo y planifica con ayuda de nuestra IA generativa.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios" class="fade-in">
+    <h2 style="text-align:center; color:#26292E; font-size:2rem; margin-bottom:1rem;">Servicios</h2>
+    <div class="info-grid">
+      <div class="info-box hover-grow">
+        <img src="Imagenes/EducacionFinancieraPersonalizada.png" alt="Educación Financiera" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+        <h4>Educación Financiera Personalizada</h4>
+        <p>Accede a materiales y guías adaptadas a tu perfil económico y estilo de vida.</p>
+      </div>
+      <div class="info-box hover-grow">
+        <img src="Imagenes/SincronizacionIot.png" alt="Sincronización IoT" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+        <h4>Sincronización IoT</h4>
+        <p>Conecta tus dispositivos para registrar movimientos financieros automáticamente.</p>
+      </div>
+      <div class="info-box hover-grow">
+        <img src="Imagenes/AsistenciaConIa.png" alt="Asistencia con IA" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+        <h4>Asistencia con IA</h4>
+        <p>Recibe recomendaciones inteligentes para optimizar tus finanzas diarias.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="funcionalidades" class="fade-in">
+    <h2 style="text-align:center; color:#26292E; font-size:2rem; margin-bottom:1rem;">Funcionalidades</h2>
+    <div class="info-grid">
+      <div class="info-box hover-grow">
+        <img src="Imagenes/DashboardInteligente.png" alt="Dashboard Inteligente" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+        <h4>Dashboard Inteligente</h4>
+        <p>Visualiza tus gastos, ingresos y metas en tiempo real con gráficos dinámicos.</p>
+      </div>
+      <div class="info-box hover-grow">
+        <img src="Imagenes/AlertasDeConsumo.png" alt="Alertas de Consumo" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+        <h4>Alertas de Consumo</h4>
+        <p>Recibe notificaciones cuando superes tus límites o detectemos patrones inusuales.</p>
+      </div>
+      <div class="info-box hover-grow">
+        <img src="Imagenes/PlanesAdaptativos.png" alt="Planes Adaptativos" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+        <h4>Planes Adaptativos</h4>
+        <p>Nuestro sistema de IA ajusta tus planes según tu comportamiento financiero.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="fade-in">
+    <h2 style="text-align:center; color:#26292E; font-size:2rem; margin-bottom:1rem;">Contáctanos</h2>
+    <div style="max-width: 800px; margin: 0 auto; padding: 2rem; text-align: center;">
+      <p>¿Tienes dudas, sugerencias o deseas colaborar? Escríbenos:</p>
+      <form class="contact-form" style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1.5rem;">
+        <input type="text" placeholder="Tu nombre" required style="padding: 0.75rem; border-radius: 5px; border: 1px solid #ccc;">
+        <input type="email" placeholder="Tu correo electrónico" required style="padding: 0.75rem; border-radius: 5px; border: 1px solid #ccc;">
+        <textarea rows="4" placeholder="Escribe tu mensaje aquí..." required style="padding: 0.75rem; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+        <button type="submit" class="btn-prioridades" style="align-self: center;">Enviar mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 FinanZen. Plataforma diseñada por estudiantes de la UPC para transformar tu bienestar económico.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
