@@ -32,7 +32,6 @@ FinanZen es una aplicación móvil e innovadora desarrollada por estudiantes de 
 
 ### 📌 Enlaces útiles
 
-- 🎥 [Demo del producto](https://drive.google.com/drive/folders/1npiCUul6GN-gIZJMyXt88h7kDYToYmXS?usp=sharing)
 - 🌐 [Landing Page](https://fr7nc0.github.io/FinanZen.github.io/Index.html)
 - 🔧 [Repositorio del proyecto](https://github.com/Fr7nc0/FinanZen.github.io)
 - 🧪 [Pruebas de aceptación (.feature)](https://github.com/Fr7nc0/acceptance-tests)
