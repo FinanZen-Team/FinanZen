@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cuestionario - FinanZen</title>
+  <link rel="stylesheet" href="assets/styles/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="cuestionario-wrapper">
+    <div class="cuestionario-box">
+      <h2 id="step-counter">Pregunta 1 de 5</h2>
+      <div class="question fade-transition" id="question-step">
+        <div id="question-title" class="question-title">...</div>
+        <div class="options" id="options-container"></div>
+      </div>
+      <button class="btn-next" onclick="nextStep()">Continuar</button>
+    </div>
+  </div>
+  <script>
+    const steps = [
+      {
+        title: "Primero, ¿En qué etapa de su vida está?",
+        options: ["Estoy comenzando", "Trabajando y creciendo", "Cerca de la jubilación", "Estoy jubilado"]
+      },
+      {
+        title: "Muy bien, ahora háblenos un poco sobre su situación laboral.",
+        options: ["Trabajo a tiempo completo", "Trabajo por mi cuenta", "Actualmente soy estudiante", "Soy militar activo o veterano", "Trabajo a tiempo parcial", "Actualmente no estoy trabajando"]
+      },
+      {
+        title: "¿Qué es lo más importante para usted?",
+        options: ["Aumentar el ahorro", "Comprar una casa", "Mejorar el crédito", "Pagar préstamo para estudiantes", "Reducir la deuda", "Ahorrar para la universidad", "Ahorrar para la jubilación"]
+      },
+      {
+        title: "¿Qué es relevante para usted?",
+        options: ["Comprar un auto", "Mudarse", "Alquilar", "Contraer matrimonio o vivir con alguien", "Prepararse para los impuestos", "Recibió ganancias inesperadas", "Comenzar un trabajo nuevo", "Tener hijos", "Contribuir/donar", "Viajar"]
+      },
+      {
+        title: "Por último, ¿esto es relevante para usted?",
+        options: ["Divorcio", "Lidiar con la pérdida de trabajo", "Comenzar un negocio", "Dejar un legado", "Manejar costos de cuidados de salud", "Cuidar a un ser querido", "Perder a un ser querido", "Refinanciar una casa", "Enseñar a hijos a manejar dinero"]
+      }
+    ];
+
+    let currentStep = 0;
+    const titleEl = document.getElementById('question-title');
+    const optionsEl = document.getElementById('options-container');
+    const stepCounter = document.getElementById('step-counter');
+
+    function renderStep() {
+      const step = steps[currentStep];
+      titleEl.textContent = step.title;
+      stepCounter.textContent = `Pregunta ${currentStep + 1} de 5`;
+      optionsEl.innerHTML = '';
+      step.options.forEach(opt => {
+        const div = document.createElement('div');
+        div.className = 'option';
+        div.textContent = opt;
+        div.addEventListener('click', () => {
+          document.querySelectorAll('.option').forEach(el => el.classList.remove('selected'));
+          div.classList.add('selected');
+        });
+        optionsEl.appendChild(div);
+      });
+    }
+
+    function nextStep() {
+      const selected = document.querySelector('.option.selected');
+      if (!selected) {
+        alert('Por favor selecciona una opción antes de continuar.');
+        return;
+      }
+      const questionDiv = document.getElementById('question-step');
+      questionDiv.classList.remove('fade-transition');
+      void questionDiv.offsetWidth;
+      questionDiv.classList.add('fade-transition');
+
+      if (currentStep < steps.length - 1) {
+        currentStep++;
+        setTimeout(renderStep, 300);
+      } else {
+        alert('Gracias por completar el cuestionario. Pronto tendrás tus resultados.');
+        window.location.href = 'dashboard.html';
+      }
+    }
+
+    renderStep();
+  </script>
+</body>
+
+</html>
