@@ -704,3 +704,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const userButton = document.getElementById("userButton");
+  const dropdownMenu = document.getElementById("dropdownMenu");
+
+  if (userButton && dropdownMenu) {
+    userButton.addEventListener("click", function (e) {
+      e.stopPropagation(); // Para que no se cierre inmediatamente
+      dropdownMenu.classList.toggle("hidden");
+    });
+
+    window.addEventListener("click", function (e) {
+      if (!e.target.closest(".user-menu")) {
+        dropdownMenu.classList.add("hidden");
+      }
+    });
+  }
+});

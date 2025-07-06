@@ -10,6 +10,7 @@
 </head>
 
 <!-- BODY -->
+
 <body>
 
   <header class="navbar">
@@ -26,7 +27,18 @@
         <li><a href="#blog" class="nav-link" id="nav-blog">Blog</a></li>
         <link>
       </ul>
-      <a href="#login" class="login-button">Iniciar sesión</a>
+      <div class="user-menu">
+        <button id="userButton" class="user-button">Bienvenido, Franco ▼</button>
+        <ul id="dropdownMenu" class="dropdown-menu hidden">
+          <li><a href="#">Perfil</a></li>
+          <li><a href="#">Notificaciones</a></l>
+          <li><a href="#">Dispositivos</a></li>
+          <li><a href="#">Foro</a></li>
+          <li><a href="#">Configuración</a></li>
+          <li><a href="#">Cerrar sesión</a></li>
+        </ul>
+      </div>
+
     </nav>
   </header>
 
@@ -234,7 +246,7 @@
 
   </footer>
   <button id="btn-arriba" title="Volver arriba">🔝</button>
-  <script src="assets/scripts/scripts.js"></script>
+  <script src="assets/scripts/main.js"></script>
 </body>
 
 </html>
