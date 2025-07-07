@@ -1,0 +1,74 @@
+<head>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+
+<!-- MODALES DE AUTENTICACIÓN -->
+<div id="signUp" class="modal-auth">
+    <div class="modal-content">
+
+        <label>Foto de perfil:</label>
+        <div class="foto-perfil-preview">
+            <img src="assets/images/FotoPerfil.svg" alt="Foto de perfil por defecto" id="preview-foto">
+        </div>
+        <label for="inputPerfil">Seleccionar imagen</label>
+        <input type="file" id="inputPerfil" accept="image/*">
+
+        <label>Nombre de usuario:</label>
+        <input type="text" id="username" placeholder="Nombre de usuario" required>
+
+        <label>Correo:</label>
+        <input type="email" id="email" placeholder="Correo electrónico" required>
+
+        <label>Contraseña:</label>
+        <input type="password" id="password" placeholder="Contraseña" required>
+
+        <label>Confirmar contraseña:</label>
+        <input type="password" id="confirmPassword" placeholder="Confirmar contraseña" required>
+
+        <div class="grupo-selecciones">
+            <div class="campo">
+                <label for="pais">País:</label>
+                <select id="pais">
+                    <option value="">Selecciona tu país</option>
+                    <option value="pe">Perú</option>
+                    <option value="mx">México</option>
+                    <option value="es">España</option>
+                    <option value="co">Colombia</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="sexo">Sexo:</label>
+                <select id="sexo">
+                    <option value="">Selecciona una opción</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="idioma">Idioma:</label>
+                <select id="idioma">
+                    <option value="es">Español</option>
+                    <option value="en">Inglés</option>
+                </select>
+            </div>
+        </div>
+
+        <button id="btn-crear-cuenta">Crear cuenta</button>
+        <div class="error-message" id="error-registro"></div>
+
+        <a href="#" class="close-modal">Cerrar</a>
+    </div>
+</div>
+
+
+<div id="login" class="modal-auth">
+    <div class="modal-content">
+        <input type="email" placeholder="Correo electrónico">
+        <input type="password" placeholder="Contraseña">
+        <button id="btn-iniciar-sesion">Iniciar sesión</button>
+        <div class="error-message" id="error-login"></div>
+
+        <a href="#" class="close-modal">Cerrar</a>
+    </div>
+</div>

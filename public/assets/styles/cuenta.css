@@ -1,0 +1,110 @@
+:root {
+    --verde-oscuro: #126B49;
+    --gris-claro: #E9EAEA;
+    --azul-marino: #0D1028;
+    --blanco: #FFFFFF;
+    --amarillo: #FFD147;
+    --rojo: #DC362E;
+    --gris-oscuro: #26292E;
+    --azul-vivo: #4597E8;
+    --fuente-principal: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--gris-claro);
+    margin: 0;
+    padding: 20px;
+    color: var(--azul-marino);
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background-color: var(--blanco);
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.header-cuenta {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header-cuenta img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--azul-vivo);
+}
+
+.saldo-section, .predicciones, .alertas, .dispositivos, .chat-ia, .reportes {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: var(--gris-claro);
+    border-radius: 10px;
+}
+
+h3 {
+    color: var(--verde-oscuro);
+    margin-bottom: 15px;
+}
+
+input[type="number"], textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--gris-oscuro);
+}
+
+button {
+    padding: 10px 15px;
+    background-color: var(--azul-vivo);
+    color: var(--blanco);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: var(--azul-marino);
+}
+
+.alertas label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: var(--rojo);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+.graficos-seccion {
+  background-color: var(--celeste-claro);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.graficos-seccion canvas {
+  margin: 2rem auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+}
