@@ -2,236 +2,85 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FinanZen - Gestiona tu dinero con inteligencia</title>
-  <link rel="stylesheet" href="assets/styles/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="FinanZen te ayuda a administrar tu dinero de forma inteligente. Controla tus finanzas con facilidad.">
+    <title>FinanZen Gestiona tu dinero con inteligencia</title>
+    <link rel="icon" href="assets/Images/Cerdito.png" type="image/png">
+    <link rel="stylesheet" href="assets/styles/Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="navbar">
-    <div class="logo">
-      <img src="assets/images/Finanzen.png" alt="Logo Finanzen">
-    </div>
-    <nav class="nav-container">
-      <ul class="nav-links">
-        <li><a href="#inicio" class="nav-link" id="nav-inicio">Inicio</a></li>
-        <li><a href="#servicios" class="nav-link" id="nav-servicios">Servicios</a></li>
-        <li><a href="#funcionalidades" class="nav-link" id="nav-funcionalidades">Funcionalidades</a></li>
-        <li><a href="#contacto" class="nav-link" id="nav-contacto">Contacto</a></li>
-        <li><a href="preciosindex.html" class="nav-link" id="nav-precios">Precios</a></li>
-        <li><a href="#blog" class="nav-link" id="nav-blog">Blog</a></li>
-      </ul>
-      <a href="#login" class="login-button">Iniciar sesión</a>
-    </nav>
-  </header>
+    <!--Header-->
+    <div id="header-placeholder"></div>
+    <!-- Sección INICIO -->
+    <section id="seccion-inicio" class="main-section inicio">
+        <div class="dynamic-panel">
+            <div id="panelInicio" class="dynamic-content active">
+                <div class="hero-content">
+                    <div class="hero-text fade-in-start">
+                        <h1 class="hero-title" id="titulo-inicio">FinanZen: Tecnología inteligente para tu salud
+                            financiera</h1>
+                        <p class="descripcion-principal" id="parrafo-principal">Nuestra plataforma combina IoT e
+                            inteligencia artificial para ayudarte a controlar tus gastos, cumplir metas de ahorro y
+                            aprender sobre finanzas con recomendaciones personalizadas.</p>
+                        <ul>
+                            <li id="caracteristica1">📊 Monitorea tus ingresos y egresos automáticamente</li>
+                            <li id="caracteristica2">🎯 Crea metas financieras y recíbelas en recordatorios inteligentes
+                            </li>
+                            <li id="caracteristica3">🧠 Aprende con sugerencias generadas por IA adaptadas a ti</li>
+                        </ul>
+                    </div>
+                    <div class="hero-image">
+                        <div class="hero-images-wrapper">
+                            <img src="assets/Images/Cerdito.png" alt="Imagen Cerdito" class="hero1-img hero-img"
+                                data-animate="scroll">
+                            <img src="assets/Images/Stonks.png" alt="Imagen Stonks" class="hero2-img hero-img"
+                                data-animate="scroll">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contenedor-principal" class="Contenedor-principal">
+        <div class="Inicio-Informacion GranContenedor">
+            <div class="info-box fade-in">
+                <img src="assets/Images/ServiciosIcono.svg" alt="Servicios" class="Mejores-Servicios">
+                <h4 id="inicio1">Los mejores Servicios</h4>
+                <p id="inicio1-desc">Disfruta de una plataforma financiera con funcionalidades líderes en su categoría.
+                </p>
+            </div>
+            <div class="info-box fade-in">
+                <img src="assets/Images/FuncionalidadesIcono.svg" alt="Funcionalidades"
+                    class="Funcionalidades-atractivas">
+                <h4 id="inicio2">Funcionalidades atractivas</h4>
+                <p id="inicio2-desc">Explora herramientas visuales, amigables y pensadas para una experiencia moderna.
+                </p>
+            </div>
+            <div class="info-box fade-in">
+                <img src="assets/Images/PreciosIcono.svg" alt="Precios" class="Precios-accesibles">
+                <h4 id="inicio3">Precios accesibles</h4>
+                <p id="inicio3-desc">Accede a funciones premium sin afectar tu presupuesto.</p>
+            </div>
+        </div>
+        <!--Encuesta-->
+        <div class="encuesta-placeholder"></div>
+    </section>
+    <!--Contactanos-->
+    <section id="contenedor-contacto" class="contenedor-contacto">
+        <div class="contacto-placeholder"></div>
+    </section>
+    <section id="contenedor-precios" class="contenedor-precios">
+        <div class="precios-placeholder"></div>
+    </section>
 
-  <section id="inicio" class="hero snapshot">
-    <div class="dynamic-panel">
-      <div id="panelInicio" class="dynamic-content active">
-        <div class="hero-caja-transparente">
-          <div class="hero-content">
-            <div class="hero-text fade-in-start">
-              <h1 class="hover-grow" id="titulo-principal">FinanZen: Tecnología inteligente para tu salud financiera
-              </h1>
-              <p id="parrafo-principal">Nuestra plataforma combina IoT e inteligencia artificial para ayudarte a
-                controlar tus gastos, cumplir metas de ahorro y aprender sobre finanzas con recomendaciones
-                personalizadas.</p>
-              <ul>
-                <li id="caracteristica1">📊 Monitorea tus ingresos y egresos automáticamente</li>
-                <li id="caracteristica2">🎯 Crea metas financieras y recíbelas en recordatorios inteligentes</li>
-                <li id="caracteristica3">🧠 Aprende con sugerencias generadas por IA adaptadas a ti</li>
-              </ul>
-            </div>
-            <div class="hero-image">
-              <div class="hero-images-wrapper">
-                <img src="assets/images/Cerdito.png" alt="Imagen Cerdito" class="hero-img cerdito-img"
-                  data-animate="scroll">
-                <img src="assets/images/Stonks.png" alt="Imagen Stonks" class="hero-img stonks-img"
-                  data-animate="scroll">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="panelServicios" class="dynamic-content">
-        <div class="hero-caja-transparente">
-          <div class="hero-content">
-            <div class="hero-text fade-in-start">
-              <h1 class="hover-grow" id="titulo-servicios">Servicios de FinanZen: IoT, IA, Planes financieros y mucho
-                más</h1>
-              <p id="parrafo-servicios">Explora nuestros servicios de Dashboard con gráficos interactivos, asistente IA,
-                tecnología IOT, control de tus gastos y planes de gasto, ahorro e inversión.</p>
-              <ul>
-                <li id="caracteristica-serv1">🚘 Ponte una meta como el auto de tus sueños</li>
-                <li id="caracteristica-serv2">🏦 Registra tus inversiones con plazos como TREA, TEA</li>
-                <li id="caracteristica-serv3">🤖 Recibe recomendaciones de ahorros</li>
-              </ul>
-            </div>
-            <div class="hero-image">
-              <div class="hero-images-wrapper">
-                <img src="assets/images/Robot.png" alt="Imagen Robot" class="hero-img robot-img" data-animate="scroll">
-                <img src="assets/images/PlantaMoneda.png" alt="Imagen Planta Moneda" class="hero-img planta-img"
-                  data-animate="scroll">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="panelFuncionalidades" class="dynamic-content">
-        <div class="hero-caja-transparente">
-          <div class="hero-content">
-            <div class="hero-text fade-in-start">
-              <h1 class="hover-grow" id="titulo-funcionalidades">Funcionalidades de FinanZen: Intuitivo, Dinámico y
-                Suave.</h1>
-              <p id="parrafo-funcionalidades">Nuestro sitio web ofrece un estilo artístico suave y colorido en los
-                gráficos, mapas, textos y herramientas. FinanZen es práctico y utilitario, porque nos preocupamos por tu
-                productividad.</p>
-              <ul>
-                <li id="caracteristica-func1">👀 Visualmente atractivo</li>
-                <li id="caracteristica-func2">🔥 Herramientas al alcance de un click</li>
-                <li id="caracteristica-func3">🧠 Aprendes usándolo</li>
-              </ul>
-            </div>
-            <div class="hero-image">
-              <div class="hero-images-wrapper">
-                <img src="assets/images/CerditoHappy.png" alt="Imagen Cerdito Feliz" class="hero-img cerdito-happy-img"
-                  data-animate="scroll">
-                <img src="assets/images/RobotHappy.png" alt="Imagen Robot Feliz" class="hero-img robot-happy-img"
-                  data-animate="scroll">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="encuesta"></div>
-      </div>
-    </div>
-    <div class="info-contenedor-gris">
-      <div class="encuesta-contenedor">
-        <img src="assets/images/Encuesta.png" alt="Imagen Encuesta" class="encuesta-img" data-animate="scroll">
-        <div class="prioridades-box fade-in hover-grow">
-          <div class="prioridades-flex">
-            <h3 class="prioridades-text" id="prioridades-texto">¿Qué tipo de usuario eres?</h3>
-            <a href="cuestionario.html" class="btn-prioridades" id="prioridades-boton">Comenzar encuesta</a>
-          </div>
-        </div>
-      </div>
-      <div class="funcionalidades-grid fade-in">
-        <div class="info-box fade-in">
-          <img src="assets/images/DashboardIcono.svg" alt="Dashboard interactivo">
-          <h4 id="funcionalidad1">Herramientas interactivas a tu alcance</h4>
-          <p id="funcionalidad1-desc">Gestiona tus finanzas desde un dashboard amigable lleno de funciones útiles.</p>
-        </div>
-        <div class="info-box fade-in">
-          <img src="assets/images/SoftwareIcono.svg" alt="Software intuitivo">
-          <h4 id="funcionalidad2">Nuestro sistema intuitivo facilita el aprendizaje</h4>
-          <p id="funcionalidad2-desc">Aprende finanzas de forma sencilla con nuestro sistema intuitivo guiado paso a
-            paso.</p>
-        </div>
-        <div class="info-box fade-in">
-          <img src="assets/images/GraficosIcono.svg" alt="Gráficos atractivos">
-          <h4 id="funcionalidad3">Sistema y gráficos visualmente atractivos</h4>
-          <p id="funcionalidad3-desc">Analiza tu información a través de gráficos claros, bonitos y personalizables.</p>
-        </div>
-      </div>
-      <div class="carousel-servicios">
-        <div class="info-box fade-in">
-          <img src="assets/images/Goals.png" alt="Ahorro">
-          <h4 id="servicio1">Metas y hábitos de ahorro</h4>
-          <p id="servicio1-desc">Define objetivos personalizados y recibe alertas automáticas para construir un hábito
-            financiero saludable.</p>
-        </div>
-        <div class="info-box fade-in">
-          <img src="assets/images/IOT.png" alt="Registro IoT">
-          <h4 id="servicio2">Registro automático IoT</h4>
-          <p id="servicio2-desc">Conecta dispositivos como relojes o apps bancarias para registrar ingresos y gastos sin
-            esfuerzo.</p>
-        </div>
-        <div class="info-box fade-in">
-          <img src="assets/images/IA.png" alt="Plan Financiero Inteligente">
-          <h4 id="servicio3">Planes financieros con IA</h4>
-          <p id="servicio3-desc">Simula escenarios, analiza tus patrones de consumo y planifica con ayuda de nuestra IA
-            generativa.</p>
-        </div>
-      </div>
-      <div class="inicio-grid fade-in">
-        <div class="info-box fade-in">
-          <img src="assets/images/ServiciosIcono.svg" alt="Servicios" style="max-width: 180px;">
-          <h4 id="inicio1">Los mejores Servicios</h4>
-          <p id="inicio1-desc">Disfruta de una plataforma financiera con funcionalidades líderes en su categoría.</p>
-        </div>
-        <div class="info-box fade-in">
-          <img src="assets/images/FuncionalidadesIcono.svg" alt="Funcionalidades">
-          <h4 id="inicio2">Funcionalidades atractivas</h4>
-          <p id="inicio2-desc">Explora herramientas visuales, amigables y pensadas para una experiencia moderna.</p>
-        </div>
-        <div class="info-box fade-in">
-          <img src="assets/images/PreciosIcono.svg" alt="Precios">
-          <h4 id="inicio3">Precios accesibles</h4>
-          <p id="inicio3-desc">Accede a funciones premium sin afectar tu presupuesto.</p>
-        </div>
-      </div>
-      <div class="info-grid">
-      </div>
-    </div>
-  </section>
-
-
-  <section class="fade-in">
-    <div id="contacto" class="contacto-estilizado">
-      <h2 class="titulo-contacto" id="titulo-contacto">Contáctanos</h2>
-      <div class="contact-form-container">
-        <p id="contacto-mensaje">¿Tienes dudas, sugerencias o deseas colaborar? Escríbenos:</p>
-        <form class="contact-form">
-          <input type="text" placeholder="Tu nombre" required id="contacto-nombre">
-          <input type="email" placeholder="Tu correo electrónico" required id="contacto-correo">
-          <textarea rows="4" placeholder="Escribe tu mensaje aquí..." required id="contacto-texto"></textarea>
-          <button type="submit" class="btn-prioridades" id="contacto-enviar">Enviar mensaje</button>
-        </form>
-        <div id="form-feedback" class="hidden"></div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer-reveal">
-    <div class="footer-container">
-      <div class="footer-brand">
-        <img src="assets/images/LogoBlanco.svg" alt="Logo FinanZen" class="footer-logo">
-        <p>&copy; 2025 FinanZen. Todos los derechos reservados.</p>
-      </div>
-      <div class="footer-links">
-        <div>
-          <h4 id="footer-social-title">Redes Sociales</h4>
-          <ul>
-            <li><a href="#" id="footer-facebook">Facebook</a></li>
-            <li><a href="#" id="footer-instagram">Instagram</a></li>
-            <li><a href="#" id="footer-whatsapp">WhatsApp</a></li>
-            <li><a href="#" id="footer-youtube">YouTube</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 id="footer-access-title">Accesos</h4>
-          <ul>
-            <li><a href="#" id="blog-link">Blog</a></li>
-            <li><a href="#" id="terminos-link">Términos de uso</a></li>
-            <li><a href="#" id="privacidad-link">Política de privacidad</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-language">
-        <label for="idioma-selector" id="idioma-label">Idioma</label><br>
-        <select name="idioma" id="idioma-selector">
-          <option value="es">Español</option>
-          <option value="en">English</option>
-        </select>
-      </div>
-    </div>
-  </footer>
-
-  </footer>
-  <button id="btn-arriba" title="Volver arriba">🔝</button>
-  <script src="assets/scripts/scripts.js"></script>
+    <footer>
+        <div class="footer-placeholder"></div>
+    </footer>
+    <script src="assets/scripts/Main.js"></script>
 </body>
 
 </html>
